@@ -1,0 +1,6 @@
+services:
+  comp-time:
+    build: .
+    ports: ["8080:8080"]
+    volumes: ["comp-time-data:/data"]
+volumes: {comp-time-data: {}}
